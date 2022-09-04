@@ -11,15 +11,15 @@ import (
 const (
 	Sender    = "alizkl.cs@gmail.com"
 	Recipient = "alizkl.cs@gmail.com"
-	Subject   = "Hello Mail"
-	HtmlBody  = "<h1 style='color:blue'>An Email</h1>"
-	TextBody  = "This is an Classic Email TExt Body"
+	Subject   = "Test Mail"
+	HtmlBody  = "<h1 style='color:blue'>This is An Test Email using AWS SES with Golang</h1>"
+	TextBody  = "This is an Classic Email Text Body"
 	CharSet   = "UTF-8"
 )
 
 func main() {
 	sess, err := session.NewSessionWithOptions(session.Options{
-		Profile: "Ali",
+		Profile: "default",
 	})
 
 	if err != nil {
